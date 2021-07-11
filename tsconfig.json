@@ -4,5 +4,5 @@
         "moduleResolution": "Node",
         "outDir": "out/"
     },
-    "exclude": ["node_modules", "./template_bot_config.ts", "./template_config.ts"]
+    "exclude": ["node_modules", "./config.template.ts"]
 }
