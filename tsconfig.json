@@ -4,5 +4,6 @@
         "moduleResolution": "Node",
         "outDir": "out/"
     },
-    "exclude": ["node_modules", "./config.template.ts"]
+    "exclude": ["node_modules", "out/"],
+    "include": ["typings/", "./src/*.ts"]
 }
