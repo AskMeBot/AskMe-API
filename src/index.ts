@@ -1,9 +1,8 @@
-import config from '../config'
 import express from 'express';
 import v1API from './api/v1'
 const app = express();
 const port = process.env.PORT || 3000;
-const requiredAuthHeader = process.env.requiredAuthHeader || config.requiredAuthHeader
+const requiredAuthHeader = process.env.requiredAuthHeader
 
 app.use((req, res, next) => {
   if(!req.headers.authorization || req.headers.authorization != requiredAuthHeader)
