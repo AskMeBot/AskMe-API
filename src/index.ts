@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 const requiredAuthHeader = process.env.requiredAuthHeader
 
 app.use((req, res, next) => {
-  if(!req.headers.authorization || req.headers.authorization != requiredAuthHeader)
+  if(!req.headers.authorization || !requiredAuthHeader || req.headers.authorization != requiredAuthHeader)
     return res.status(401).json({message:"Unauthorized"})
   next()
 })
