@@ -16,6 +16,9 @@ app.use("/api/v1", v1API)
 //Fallback to API V1 if no version specified
 app.use("/api", v1API)
 
+app.use((req, res) => {
+  res.status(404).json({message:"Invalid endpoint"})
+})
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
