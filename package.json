@@ -1,6 +1,6 @@
 {
   "name": "askme-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The Web API server for the AskMe Bot to fetch data from.",
   "main": "out/index.js",
   "typings": "typings/",
