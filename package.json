@@ -13,6 +13,10 @@
   "author": "",
   "license": "GPL-3.0-only",
   "dependencies": {
+    "@types/body-parser": "^1.19.1",
+    "@types/cors": "^2.8.12",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
