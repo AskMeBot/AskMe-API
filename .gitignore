@@ -3,3 +3,4 @@ out/
 config.ts
 trivia.json
 .DS_Store
+.env
